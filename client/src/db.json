@@ -1,0 +1,32 @@
+{
+    "superhero":[
+        {
+        "id":1,
+        "name":"Spiderman ",
+        "enemy":"EnemySpidi"
+        },
+        {
+        "id":2,
+        "name":"Thor",
+        "enemy":"EnemySpidi"
+        },
+        {
+        "id":3,
+        "name":"Hulk 1",
+        "enemy":"EnemySpidi"
+        }
+    ],
+    "friend":[
+        {
+        "id":1,
+        "name":"Cap"
+        },
+        {
+        "id":2,
+        "name":"Nat"
+        },
+        {
+        "id":3,
+        "name":"Dr"
+        }]
+}
