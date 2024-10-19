@@ -1,11 +1,20 @@
 import axios from 'axios'
 import React from 'react'
-import { useQuery } from 'react-query'
-import { useSuperHero } from './hooks/useSuperHero'
+import { useMutation, useQuery } from 'react-query'
+import { useSuperHero ,useSuperHeroAdd } from './hooks/useSuperHero'
 import { Link } from 'react-router-dom'
-import { useSuperHeroName } from './hooks/useSuperHeroName'
+import { useSuperHeroName   } from './hooks/useSuperHeroName'
 
 const RQsuperHero = () => {
+    const {mutate} = useMutation(useSuperHeroAdd,);
+
+    const handleAdd = () =>{
+        mutate({
+            "id":4,
+            "name":"pranesh",
+            "enemy":"vv"
+            })
+    }
 
     const onSuccess = ()=>{
         console.log("S")
@@ -34,7 +43,10 @@ const RQsuperHero = () => {
         <div key={d.id}>
             <Link to={`/RQsuperHero/${d.id}`}>{d.name}</Link>
         </div>
-    ))}</div>
+    ))}
+    <button onClick={handleAdd}>Handle Add</button>
+    
+    </div>
   )
 }
 

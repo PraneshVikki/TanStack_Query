@@ -8,3 +8,8 @@ export const useSuperHero = (onSuccess,onError)=>{
     onSuccess,
     onError
 })}
+
+
+export const useSuperHeroAdd = (Hero)=>{
+    axios.post('http://localhost:4000/superhero',Hero);
+}
