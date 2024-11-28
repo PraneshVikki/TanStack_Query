@@ -26,7 +26,7 @@ function App() {
 
   if (isLoading) {
     console.log("loading")
-    return <h1>Loading...</h1>;
+    return <h1>Loading....</h1>;
   } 
   const queryClient = new QueryClient();  
   return (
